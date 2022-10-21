@@ -35,25 +35,25 @@ jobs:
          RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
          RCLONE_CONFIG_PASS: ${{ secrets.RCLONE_CONFIG_PASS }}
         with:
-          args: copyto beiqishu.epub gdrive:/Ancient-China-Books/北齊書.epub
+          args: copyto beiqishu.epub gdrive:/古籍共享电子书计划/北齊書.epub
       - name: Sync vst to Google drive
         uses: wei/rclone@v1
         env:
          RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
          RCLONE_CONFIG_PASS: ${{ secrets.RCLONE_CONFIG_PASS }}
         with:
-          args: copyto beiqishu-vst.epub gdrive:/Ancient-China-Books/北齊書-豎排.epub
+          args: copyto beiqishu-vst.epub gdrive:/古籍共享电子书计划/北齊書-豎排.epub
       - name: Sync to Freemdict
         uses: wei/rclone@v1
         env:
          RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
          RCLONE_CONFIG_PASS: ${{ secrets.RCLONE_CONFIG_PASS }}
         with:
-          args: copyto beiqishu.epub freemdict:/Ancient-China-Books/北齊書.epub
+          args: copyto beiqishu.epub freemdict:/古籍共享电子书计划/北齊書.epub
       - name: Sync vst to Freemdict
         uses: wei/rclone@v1
         env:
          RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
          RCLONE_CONFIG_PASS: ${{ secrets.RCLONE_CONFIG_PASS }}
         with:
-          args: copyto beiqishu-vst.epub freemdict:/Ancient-China-Books/北齊書-豎排.epub
+          args: copyto beiqishu-vst.epub freemdict:/古籍共享电子书计划/北齊書-豎排.epub
